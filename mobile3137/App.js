@@ -8,27 +8,8 @@ import Estoque from './estoque';
 import FaleConosco from './faleconosco';
 
 export default function App() {
-
-  const Stack = createStackNavigator();
-
-  <Stack.Navigator>
-    
-  </Stack.Navigator>
-  return (
-    <View style={styles.container}>
-      <View style={styles.texto}>
-        BEM-VINDO AO LOGIN
-      </View>
-      <View style={styles.input}>
-      <TextInput placeholder='EMAIL'/>
-      </View> 
-      <View style={styles.input}>
-      <TextInput placeholder='SENHA'/>
-      </View>
-      <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate(Estoque)}>
-          <Text>CLIQUE AQUI</Text>
-      </TouchableOpacity>
-    </View>
+  return(
+    Estoque()
   )
 }
 
@@ -40,6 +21,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: 20
   },
+
   input: {
     borderColor: '#000000',
     borderWidth: 1,
@@ -60,3 +42,19 @@ const styles = StyleSheet.create({
   },
 });
 
+/*   return (
+    <View style={styles.container}>
+      <View style={styles.texto}>
+        BEM-VINDO AO LOGIN
+      </View>
+      <View style={styles.input}>
+      <TextInput placeholder='EMAIL'/>
+      </View> 
+      <View style={styles.input}>
+      <TextInput placeholder='SENHA'/>
+      </View>
+      <TouchableOpacity style={styles.button}>
+          <Text>CLIQUE AQUI</Text>
+      </TouchableOpacity>
+    </View>
+  ) */

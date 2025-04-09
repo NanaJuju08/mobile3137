@@ -10,19 +10,27 @@ export default function Estoque() {
   return (
     <View style={styles.container}>
         <View style={styles.texto}>
-            <Text>PRODUTOS CADASTRADOS</Text>
+            PRODUTOS CADASTRADOS
         </View>
         <View style={styles.img}>
-            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
-            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
+            <Image style={styles.img} source={{uri: 'https://70730.cdn.simplo7.net/static/70730/sku/natal-lembrancinha-de-natal-kit-3-velas-aromaticas-40g-rolha-e-caixa-2023-p-1698078847229.jpg'}}/>
+            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8j64K5Uf_41l2FvAxxBedyQpoDyq1cdMLw&s'}}/>
+        </View>
+        <View style={styles.textinho}>
+        Velas Aromáticas de Laranja e algodão
         </View>
         <View style={styles.img}>
-            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
-            <Text>Vela Aromática</Text>
+            <Image style={styles.img} source={{uri: 'https://d2r9epyceweg5n.cloudfront.net/stores/304/048/rte/IMAGENS%20PARA%20BLOG%20(8)1.png'}}/>
+        </View>
+        <View style={styles.textinho}>
+            Velas aromáticas de seda, tandra e algodão
         </View>
         <View style={styles.img}>
-            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
-            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
+            <Image style={styles.img} source={{uri: 'https://cdn.awsli.com.br/800x800/2455/2455036/produto/250159790/whatsapp-image-2024-01-18-at-17-35-02-p2z9e8dczm.jpeg'}}/>
+            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdULbWmU2Pfso9Ghft1e4yrn5YnIGS_3-BkguSjT4w_EElr4I8wh9HQDgPCiKV7o11gsE&usqp=CAU'}}/>
+        </View>
+        <View style={styles.textinho}>
+            Vela aromática de flor de cerejeira
         </View>
     </View>
   );
@@ -36,11 +44,19 @@ const styles = StyleSheet.create({
 
   texto: {
     flex: 1,
-    backgroundColor: '#f194ff',
+    justifyContent: 'end',
+     alignItems: 'center',
+     fontSize: 25,
+     fontWeight: 'bold'
+  },
+
+  textinho: {
+    flex: 1,
     justifyContent: 'center',
      alignItems: 'center',
-     fontSize: 50
+     fontSize: 20
   },
+
 
   img: {
     flex: 1,
@@ -48,5 +64,7 @@ const styles = StyleSheet.create({
     widht: 100,
     height: 100,
     flexDirection: 'row',
+    gap: 20,
+    padding: 20
     }
 });

@@ -11,40 +11,52 @@ export default function FaleConosco() {
     const [mensagem, setMensagem] = useState('');
   return (
     <View style={styles.container}>
+        <View style={styles.img}>
+            <Image style={styles.img} source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYPF2CEEQGR18HTsCkM-Uq6euwqANzdbyPQ&s'}}/>
+        </View>
         <View style={styles.texto}>
-            <Text>FALE CONOSCO</Text>
+            FALE CONOSCO
+        </View>
             <View style={styles.input}>
                 <TextInput placeholder='Nome' value={nome} onChangeText={setNome}/>
-                <TextInput placeholder='Email' value={email} onChangeText={setEmail}/>
-                <TextInput placeholder='Mensagem' value={mensagem} onChangeText={setMensagem}/>
-                <Text>Olá, {nome}, seu email é {email}, sua mensagem é {mensagem}.</Text>
             </View>
-        </View>
+            <View style={styles.input}>
+                <TextInput placeholder='Email' value={email} onChangeText={setEmail}/>
+            </View>
+            <View style={styles.input}>
+                <TextInput placeholder='Mensagem' value={mensagem} onChangeText={setMensagem}/>
+            </View>
+                <Text>Olá, {nome}, seu email é {email}, sua mensagem é {mensagem}.</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff'
-  },
+   container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 20
+      },
 
   texto: {
-    flex: 1,
     justifyContent: 'center',
-     alignItems: 'center',
+    alignItems: 'center',
+    fontSize: 25,
+    fontWeight: 'bold'
   },
 
   img: {
-    flex: 1,
     display: 'flex',
     widht: 100,
-    height: 100
-  },
+    height: 100,
+    flexDirection: 'row',
+    },
 
   input: {
     borderColor: '#000000',
-    borderWidth: 4
-  }
+    borderWidth: 1,
+    width: 300,
+  },
 });
