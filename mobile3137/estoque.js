@@ -4,11 +4,13 @@ import { StyleSheet, Text, View, TextInput, Button, Image, ImageBackground} from
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import 'react-native-gesture-handler';
-import Estoque from './estoque';
 
-export default function App() {
+export default function Estoque() {
+
   return (
-    Estoque()
+    <View style={styles.container}>
+      <Text>Tela de estoque</Text>
+    </View>
   );
 }
 
@@ -20,4 +22,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
